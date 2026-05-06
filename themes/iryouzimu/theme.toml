@@ -1,0 +1,4 @@
+name = "iryouzimu"
+license = "MIT"
+description = "Custom theme for iryouzimu.com"
+min_version = "0.110.0"
