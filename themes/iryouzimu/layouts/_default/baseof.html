@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
+<link rel="stylesheet" href="{{ "style.css" | relURL }}">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="{{ "/" | relURL }}" class="site-title">{{ .Site.Title }}</a>
+    <nav><a href="{{ "/" | relURL }}">ホーム</a></nav>
+  </div>
+</header>
+<main class="container">
+  {{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+  </div>
+</footer>
+</body>
+</html>
