@@ -1,0 +1,12 @@
+baseURL = 'https://iryouzimu.com/'
+languageCode = 'ja'
+title = '医療事務・調剤薬局の転職ガイド'
+theme = 'iryouzimu'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = '医療事務・調剤薬局で働く人、転職を考える人のための情報サイト'
